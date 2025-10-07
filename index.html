@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة المركزي كود- نسخة نهائية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body class="antialiased">
+    <div id="telegram-gate"
+        class="fixed inset-0 bg-slate-900 bg-opacity-80 backdrop-blur-sm flex items-center justify-center z-50 p-4">
+        <div
+            class="w-full max-w-lg bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 text-center transform transition-all opacity-0 scale-95">
+            <i class="fab fa-telegram text-6xl text-sky-500 mb-4"></i>
+            <h2 class="text-2xl font-extrabold text-slate-800 dark:text-white">مرحباً بك في  منصة كورسات    !</h2>
+            <p class="text-slate-500 dark:text-slate-400 mt-2 mb-6">للوصول إلى المحتوى، يرجى أولاً الانضمام إلى قناتنا
+                الأساسية على تليجرام للحصول على آخر التحديثات والإعلانات الهامة.</p>
+            <a href="https://t.me/DopaCode" id="join-telegram-btn"
+                class="w-full bg-sky-500 text-white font-bold py-3 px-5 rounded-lg hover:bg-sky-600 transition-colors text-lg inline-block">
+                <i class="fab fa-telegram mr-2"></i>
+                الانضمام إلى القناة
+            </a>
+            <button id="confirm-join-btn"
+                class="mt-4 text-sm text-slate-400 hover:text-slate-600 dark:hover:text-white">لقد
+                انضممت بالفعل، تابع إلى المنصة &rarr;</button>
+        </div>
+    </div>
+    <div class="counter">
+
+    </div>
+
+    <div id="platform-container" class="flex h-screen opacity-0 transition-opacity duration-500">
+        <aside id="sidebar"
+            class="sidebar fixed top-0 right-0 h-full w-72 z-30 lg:relative lg:translate-x-0 flex flex-col">
+            <div class="p-5 border-b flex justify-between items-center" style="border-color: var(--border-color);">
+                <h1 class="text-2xl font-extrabold text-cyan-600 dark:text-cyan-500"> منصة كورسات    </h1>
+                <button id="close-sidebar" class="lg:hidden text-2xl text-gray-400">&times;</button>
+            </div>
+
+            <nav id="main-nav" class="p-3 space-y-2 flex-grow overflow-y-auto">
+                <a href="#" data-section="home" class="nav-link flex items-center gap-3 p-3 rounded-lg active">
+                    <i class="fas fa-home w-5 text-center"></i>
+                    <span>الرئيسية</span>
+                </a>
+                <div class="px-3 pt-4 pb-2 text-xs font-semibold text-slate-400 uppercase">الأقسام</div>
+                <a href="#" data-section="scientific_committee" class="nav-link flex items-center gap-3 p-3 rounded-lg">
+                    <i class="fas fa-university w-5 text-center text-purple-500"></i>
+                    <span>اللجان العلمية</span>
+                </a>
+                <a href="#" data-section="technical" class="nav-link flex items-center gap-3 p-3 rounded-lg">
+                    <i class="fas fa-code w-5 text-center text-blue-500"></i>
+                    <span>القنوات التقنية</span>
+                </a>
+                <a href="#" data-section="academic" class="nav-link flex items-center gap-3 p-3 rounded-lg">
+                    <i class="fas fa-book-reader w-5 text-center text-green-500"></i>
+                    <span>القنوات الأكاديمية</span>
+                </a>
+                <a href="#" data-section="design_ui_ux" class="nav-link flex items-center gap-3 p-3 rounded-lg">
+                    <i class="fas fa-palette w-5 text-center text-pink-500"></i>
+                    <span>التصميم و UI/UX</span>
+                </a>
+                <a href="#" data-section="cyber_security" class="nav-link flex items-center gap-3 p-3 rounded-lg">
+                    <i class="fas fa-shield-halved w-5 text-center text-red-500"></i>
+                    <span>الأمن السيبراني</span>
+                </a>
+                <a href="#" data-section="ai" class="nav-link flex items-center gap-3 p-3 rounded-lg">
+                    <i class="fas fa-robot w-5 text-center text-indigo-500"></i>
+                    <span>الذكاء الاصطناعي</span>
+                </a>
+                <div class="px-3 pt-4 pb-2 text-xs font-semibold text-slate-400 uppercase">حول</div>
+                <a href="#" data-section="about_developer" class="nav-link flex items-center gap-3 p-3 rounded-lg">
+                    <i class="fas fa-user-tie w-5 text-center text-slate-500"></i>
+                    <span>عن المطور</span>
+                </a>
+            </nav>
+
+            <div class="p-3 border-t" style="border-color: var(--border-color);">
+                <button id="contact-us-btn" class="nav-link w-full flex items-center gap-3 p-3 rounded-lg">
+                    <i class="fas fa-paper-plane w-5 text-center"></i>
+                    <span>شاركنا محتوى</span>
+                </button>
+            </div>
+        </aside>
+
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <header
+                class="bg-white dark:bg-slate-800 p-4 flex justify-between items-center z-20 border-b dark:border-slate-700">
+                <button id="open-sidebar" class="lg:hidden text-2xl text-gray-500 dark:text-gray-400">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="flex-1 text-center">
+                    <h1 class="text-xl sm:text-2xl font-extrabold text-slate-700 dark:text-slate-200 hidden sm:block">
+                    منصة كورسات
+                    </h1>
+                </div>
+                <div class="flex items-center gap-4">
+                    <button id="dark-mode-toggle" class="text-xl text-gray-500 dark:text-gray-400">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div class="flex-1 overflow-x-hidden overflow-y-auto">
+                <main id="main-content" class="p-6"></main>
+                <footer
+                    class="p-4 text-center text-sm text-slate-500 dark:text-slate-400 border-t dark:border-slate-700">
+                    تم التطوير بواسطة المهندس:
+                    <a href="#aiman" data-section="about_developer" id="footer-dev-link"
+                        class="font-bold text-cyan-600 hover:underline cursor-pointer"> ايمن المليكي</a>.
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal"
+        class="modal-overlay fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none">
+        <div id="modal-content"
+            class="modal-content rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col opacity-0 transform scale-95">
+        </div>
+    </div>
+
+    <div id="contact-modal"
+        class="modal-overlay fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none">
+        <div class="modal-content rounded-2xl shadow-2xl w-full max-w-lg flex flex-col opacity-0 transform scale-95">
+            <div class="p-5 border-b dark:border-slate-700 flex justify-between items-center">
+                <h3 class="text-2xl font-extrabold"> شاركنا محتواك او قنواتك </h3>
+                <button id="contact-modal-close"
+                    class="text-2xl text-slate-400 hover:text-slate-600 dark:hover:text-slate-200">&times;</button>
+            </div>
+            <form id="contact-form" class="p-6 space-y-4">
+                <p class="text-sm text-slate-500 dark:text-slate-400">هل لديك اقتراح لإضافة قناة جديدة؟ يرجى تعبئة
+                    النموذج
+                    أدناه.</p>
+                <div>
+                    <label for="channel_name" class="block text-sm font-medium mb-1">اسم القناة</label>
+                    <input type="text" id="channel_name" required
+                        class="w-full p-2 bg-slate-100 dark:bg-slate-700 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                </div>
+                <div>
+                    <label for="channel_link" class="block text-sm font-medium mb-1">رابط القناة
+                        (يوتيوب/تليجرام)</label>
+                    <input type="url" id="channel_link" required
+                        class="w-full p-2 bg-slate-100 dark:bg-slate-700 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+                </div>
+                <div>
+                    <label for="channel_reason" class="block text-sm font-medium mb-1">لماذا تقترح هذه القناة؟</label>
+                    <textarea id="channel_reason" rows="3" required
+                        class="w-full p-2 bg-slate-100 dark:bg-slate-700 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"></textarea>
+                </div>
+                <div class="pt-2">
+                    <button type="submit"
+                        class="w-full bg-cyan-500 text-white font-bold py-3 px-5 rounded-lg hover:bg-cyan-600 transition-colors">إرسال
+                        الاقتراح</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
