@@ -17,52 +17,24 @@ document.addEventListener("DOMContentLoaded", () => {
         ],
       },
       technical: {
-        title: "الأكاديمية التقنية",
+        title: "مجمع التقنية",
         icon: "fas fa-code text-blue-500",
         color: "blue",
         description:
-          "أفضل القنوات لتعلم البرمجة، استكشاف التقنيات الحديثة، وتطوير المهارات في عالم التكنولوجيا.",
-        subsections: ["رباط التقنية", "تطوير الويب", "DevOps وهندسة البرمجيات"],
+          "  المجمع التقني منصة تعليمية مرجعية لطلاب الهندسة وتقنية المعلومات، تجمع أفضل الموارد لتطوير المهارات البرمجية والأكاديمية، وتقدّم محتوى متدرج يشجع على التعلم المستمر.",
+        subsections: ["رباط التقنية","أدوات البرمجة والتعلم", "مواقع ومنصات تعليمية"],
       },
       academic: {
-        title: "القنوات الأكاديمية التعليمية",
-        icon: "fas fa-book-reader text-green-500",
+        title: "سوق العمل والجاهزية المهنية",
+        icon: "fas fa-briefcase text-purple-500",
         color: "green",
         description:
-          "قنوات تعليمية متنوعة تغطي مجالات علمية وأدبية مختلفة بأسلوب مبسط وممتع.",
+          "قسم يهيئ المهندس (بغض النظر عن تخصصه) لاكتساب الأدوات والمفاهيم الأساسية المشتركة بين جميع فروع الهندسة التقنية والبرمجية والشبكية، مع التركيز على التفكير المنطقي، وأدوات العمل الجماعي الحديثة.",
         subsections: [
-          "مستوى اول_كلية الهندسة",
-          "علوم إنسانية ولغات",
-          "اقتصاد وإدارة",
+        "الأدوات العقلية والمفاهيم الأساسية",
+        "الأدوات المشتركة لجميع المهندسين",
+        "أدوات التواصل والتعاون المهني",
         ],
-      },
-      design_ui_ux: {
-        title: "التصميم وواجهة المستخدم",
-        icon: "fas fa-palette text-pink-500",
-        color: "pink",
-        description:
-          "قنوات لتعلم كل ما يخص تصميم الواجهات، تجربة المستخدم، والأدوات الإبداعية.",
-        subsections: [
-          "أساسيات التصميم",
-          "أدوات التصميم (Figma, Sketch)",
-          "تجربة المستخدم (UX)",
-        ],
-      },
-      cyber_security: {
-        title: "الأمن السيبراني",
-        icon: "fas fa-shield-halved text-red-500",
-        color: "red",
-        description:
-          "مصادر لتعلم حماية الأنظمة والشبكات واكتشاف الثغرات الأمنية.",
-        subsections: ["الشبكات وأمنها", "الاختراق الأخلاقي", "أمن التطبيقات"],
-      },
-      ai: {
-        title: "الذكاء الاصطناعي",
-        icon: "fas fa-robot text-indigo-500",
-        color: "indigo",
-        description:
-          "استكشف عالم الذكاء الاصطناعي، تعلم الآلة، وعلوم البيانات.",
-        subsections: ["تعلم الآلة", "علوم البيانات", "معالجة اللغات الطبيعية"],
       },
     },
     channels: [
@@ -81,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-square-root-variable", // رمز يدل على الرياضيات والتحليل
       },
       {
-        id: 54,
+        id: 2,
         name: "كورس تعلم الخوارزميات الانسيابية",
         subsection: "المستوى الأول",
         description:
@@ -94,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-diagram-project", // لأن المخططات الانسيابية تمثل flow diagrams
       },
       {
-        id: 2,
+        id: 3,
         name: "كورس اللغة العربية",
         subsection: "المستوى الأول",
         description:
@@ -107,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-language", // الأنسب لدورات اللغات والكتابة
       },
       {
-        id: 3,
+        id: 4,
         name: "كورس الجبر الخطي",
         subsection: "المستوى الأول",
         description:
@@ -120,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-table-cells", // يرمز إلى المصفوفات في الجبر الخطي
       },
       {
-        id: 4,
+        id: 5,
         name: "كورس تعلم الجافا",
         subsection: "المستوى الأول",
         description:
@@ -134,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-brands fa-java", // شعار الجافا الأصلي
       },
       {
-        id: 5,
+        id: 6,
         name: "كورس تعلم الرياضيات المتقطعة",
         subsection: "المستوى الأول",
         description: "كورس عربي في شرح كافة مواضيع الرياضيات المتقطعة.",
@@ -146,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-shapes", // يمثل التجريد والبُنى المنفصلة في الرياضيات المتقطعة
       },
       {
-        id: 6,
+        id: 7,
         name: "كورس تعلم أساسيات ++C",
         subsection: "المستوى الأول",
         description:
@@ -159,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-c", // أيقونة مباشرة ترمز لـ C أو ++C
       },
       {
-        id: 7,
+        id: 8,
         name: "كورس تعلم أساسيات البايثون",
         subsection: "المستوى الأول",
         description:
@@ -172,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-brands fa-python", // الأيقونة الرسمية للبايثون
       },
       {
-        id: 8,
+        id: 9,
         name: "كورس تعلم الفيزياء العامة 101",
         subsection: "المستوى الأول",
         description:
@@ -185,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-atom", // الفيزياء والذرة والعلوم الطبيعية
       },
       {
-        id: 9,
+        id: 10,
         name: "تفاضل وتكامل",
         subsection: "المستوى الأول",
         description:
@@ -197,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-square-root-alt", // رمزية واضحة للتفاضل والتكامل
       },
       {
-        id: 10,
+        id: 11,
         name: "كورس تعلم الرسم الهندسي",
         subsection: "المستوى الأول",
         description: "كورس في تعلم أساسيات الرسم الهندسي من البداية للاحتراف.",
@@ -209,7 +181,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-drafting-compass", // الأداة التقليدية للرسم الهندسي
       },
       {
-        id: 11,
+        id: 12,
         name: "كورس تعلم هياكل البيانات بالجافا",
         subsection: "المستوى الثاني",
         description:
@@ -328,7 +300,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
 
       {
-        id: 22,
+        id: 21,
         name: "دوبــاكــود | DopaCode",
         subsection: "رباط التقنية",
         description:
@@ -338,7 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-laptop-code",
       },
       {
-        id: 23,
+        id: 22,
         name: "محمود نصر الدين",
         subsection: "رباط التقنية",
         description: "محتوى عن التقنية والإنتاجية وأشياء أخرى ",
@@ -377,7 +349,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
 
       {
-        id: 43,
+        id: 27,
         name: " كورس لمقرر اتصالات البيانات ",
         subsection: "المستوى الثاني",
         description:
@@ -390,7 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-satellite-dish",
       },
       {
-        id: 42,
+        id: 28,
         name: " كورس لمقرر مبادئ الامن السيبراني",
         subsection: "المستوى الثاني",
         description:
@@ -402,7 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-shield-halved",
       },
       {
-        id: 41,
+        id: 29,
         name: " كورس لمقرر الكترونيات ",
         subsection: "المستوى الثاني",
         description:
@@ -415,7 +387,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-bolt",
       },
       {
-        id: 49,
+        id: 30,
         name: "كورس لمقرر  هندسة البرمجيات  ",
         subsection: "المستوى الثالث",
         description:
@@ -428,7 +400,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-gears",
       },
       {
-        id: 55,
+        id: 31,
         name: "كورس لمقرر تطوير تطبيقات الويب << php >>",
         subsection: "المستوى الثالث",
         description:
@@ -441,7 +413,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-brands fa-php",
       },
       {
-        id: 56,
+        id: 32,
         name: "كورس اساسيات #C << البرمجة المرئية >>",
         subsection: "المستوى الثالث",
         description:
@@ -454,7 +426,7 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-hashtag",
       },
       {
-        id: 57,
+        id: 33,
         name: " كورس لمقرر البرمجة المرئية",
         subsection: "المستوى الثالث",
         description:
@@ -467,8 +439,8 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-window-restore",
       },
       {
-        id: 58,
-        name: "جمبع بوتات مستوئ اول 2026",
+        id: 34,
+        name: "جميع بوتات مستوئ اول 2026",
         subsection: " بوتات  اللجان العلمية",
         description:
           "    بوتات اللجان العلمية في المستوى الأول لعام 2026 توفر مصادر تعليمية منظمة لكل قسم أكاديمي، لمساعدة الطلاب الجدد على فهم المواد الأساسية والتفاعل مع الأنشطة بسهولة",
@@ -480,8 +452,8 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-1",
       },
       {
-        id: 59,
-        name: "جمبع بوتات مستوئ ثاني 2026",
+        id: 35,
+        name: "جميع بوتات مستوئ ثاني 2026",
         subsection: " بوتات  اللجان العلمية",
         description:
           "    بوتات المستوى الثاني تقدم محتوى جاهز من اللجان العلمية لدعم مواد التخصص التمهيدي وتنظيم الدراسة.",
@@ -494,8 +466,8 @@ document.addEventListener("DOMContentLoaded", () => {
         logo: "fa-solid fa-2",
       },
       {
-        id: 60,
-        name: "جمبع بوتات مستوئ  ثالث 2026",
+        id: 36,
+        name: "جميع بوتات مستوئ  ثالث 2026",
         subsection: " بوتات  اللجان العلمية",
         description:
           "   بوتات المستوى الثالث تقدم محتوى جاهز من اللجان العلمية لدعم مواد التخصص التمهيدي وتنظيم الدراسة.",
@@ -506,6 +478,488 @@ document.addEventListener("DOMContentLoaded", () => {
         rating: 4.7,
         logo: "fa-solid fa-3",
       },
+
+  {
+    id: 37,
+    name: "freeCodeCamp",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "موقع يقدم دورات مجانية مع مشاريع عملية منظمة خطوة بخطوة لبناء مهارات البرمجة من الصفر حتى المستوى المتقدم.",
+    platforms: {
+      web: "https://www.freecodecamp.org"
+    },
+    rating: 4.8,
+    logo: "fa-solid fa-graduation-cap"
+  },
+  {
+    id: 38,
+    name: "W3Schools",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "موقع يقدم دروسًا سهلة ومباشرة في لغات الويب الأساسية، مع محرر تجريبي لتطبيق المفاهيم بشكل فوري.",
+    platforms: {
+      web: "https://www.w3schools.com"
+    },
+    rating: 4.5,
+    logo: "fa-brands fa-html5"
+  },
+  {
+    id: 39,
+    name: "Stack Overflow",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "منتدى برمجي ضخم لحل المشاكل، طرح الأسئلة، ومشاركة الحلول مع مجتمع عالمي من المبرمجين.",
+    platforms: {
+      web: "https://stackoverflow.com"
+    },
+    rating: 4.9,
+    logo: "fa-brands fa-stack-overflow"
+  },
+  {
+    id: 40,
+    name: "LeetCode",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "منصة تحديات برمجية تعزز مهارات الخوارزميات وحل المشكلات بمستويات مختلفة معدة لاختبارات البرمجة.",
+    platforms: {
+      web: "https://leetcode.com"
+    },
+    rating: 4.7,
+    logo: "fa-solid fa-code"
+  },
+  {
+    id: 41,
+    name: "HackerRank",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "منصة لتمارين ومسابقات برمجية متنوعة تساعد في تحسين التفكير التحليلي وتطوير مهارات الكود.",
+    platforms: {
+      web: "https://www.hackerrank.com"
+    },
+    rating: 4.6,
+    logo: "fa-solid fa-bolt"
+  },
+  {
+    id: 42,
+    name: "MDN Web Docs",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "مصدر رسمي وشامل لتوثيق تكنولوجيات الويب من HTML إلى JavaScript وCSS، مع أمثلة تعليمية.",
+    platforms: {
+      web: "https://developer.mozilla.org"
+    },
+    rating: 4.8,
+    logo: "fa-brands fa-firefox-browser"
+  },
+  {
+    id: 43,
+    name: "Coursera",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "منصة دورات تعليمية من جامعات عالمية تقدم محتوى برمجي وعلوم حاسوب مع شهادات معتمدة.",
+    platforms: {
+      web: "https://www.coursera.org"
+    },
+    rating: 4.7,
+    logo: "fa-brands fa-coursera"
+  },
+  {
+    id: 44,
+    name: "edX",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "منصة تعليمية تضم محتوى أكاديمي من جامعات مرموقة، تقدم دورات برمجة وعلوم حاسوب مجانية ومدفوعة.",
+    platforms: {
+      web: "https://www.edx.org"
+    },
+    rating: 4.6,
+    logo: "fa-solid fa-school"
+  },
+  {
+    id: 45,
+    name: "GitHub",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "منصة لاستضافة المشاريع البرمجية المفتوحة المصدر، تساعد على التعلم من خلال قراءة الأكواد والمشاركة في المشاريع.",
+    platforms: {
+      web: "https://github.com"
+    },
+    rating: 4.9,
+    logo: "fa-brands fa-github"
+  },
+  {
+    id: 46,
+    name: "Reddit - r/learnprogramming",
+    subsection: "مواقع ومنصات تعليمية",
+    description: "منتدى تفاعلي يقدم دعم ونصائح للمتعلمين الجدد، حيث يمكن طرح الأسئلة والحصول على مساعدة من المجتمع.",
+    platforms: {
+      web: "https://www.reddit.com/r/learnprogramming"
+    },
+    rating: 4.4,
+    logo: "fa-brands fa-reddit"
+  },
+  
+  {
+    id: 47,
+    name: "GitHub Copilot",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "مساعد ذكي لإكمال الكود واقتراح حلول برمجية تسهل عملية التعلم وكتابة الأكواد بسرعة ودقة.",
+    platforms: {
+      toolai: "https://copilot.github.com"
+    },
+    rating: 4.8,
+    logo: "fa-solid fa-robot"
+  },
+  {
+    id: 48,
+    name: "Kite",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "أداة تقدم اقتراحات ذكية أثناء كتابة الكود مع شروحات تساعد في فهم المفاهيم البرمجية.",
+    platforms: {
+      toolai: "https://www.kite.com"
+    },
+    rating: 4.6,
+    logo: "fa-solid fa-lightbulb"
+  },
+  {
+    id: 49,
+    name: "Replit AI",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "بيئة تطوير متكاملة عبر الإنترنت مع دعم ذكاء اصطناعي لتسهيل بناء المشاريع وتصحيح الأكواد.",
+    platforms: {
+      toolai: "https://replit.com"
+    },
+    rating: 4.7,
+    logo: "fa-solid fa-laptop-code"
+  },
+  {
+    id: 50,
+    name: "DeepCode",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "محلل أكواد ذكي يكشف الأخطاء ويقترح تحسينات لرفع جودة البرامج المكتوبة.",
+    platforms: {
+      toolai: "https://www.deepcode.ai"
+    },
+    rating: 4.5,
+    logo: "fa-solid fa-search"
+  },
+  {
+    id: 51,
+    name: "Codex by OpenAI",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "مولد أكواد متقدم يساعد في توليد حلول برمجية مع شروحات مفيدة للطلاب.",
+    platforms: {
+      toolai: "https://openai.com/blog/openai-codex"
+    },
+    rating: 4.7,
+    logo: "fa-solid fa-code"
+  },
+  {
+    id: 52,
+    name: "Quizlet with AI",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "أداة لإنشاء بطاقات تعليمية ذكية تساعد في مراجعة واستذكار المفاهيم التقنية بسهولة.",
+    platforms: {
+      toolai: "https://quizlet.com"
+    },
+    rating: 4.4,
+    logo: "fa-solid fa-chalkboard"
+  },
+  {
+    id: 53,
+    name: "Socratic by Google",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "أداة تساعد في حل مسائل البرمجة الأكاديمية مع توفير شروحات دقيقة مبسطة.",
+    platforms: {
+      toolai: "https://socratic.org"
+    },
+    rating: 4.3,
+    logo: "fa-solid fa-question"
+  },
+  {
+    id: 54,
+    name: "Notion AI",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "منصة لتنظيم الملاحظات وإدارة المشاريع مع دعم ذكاء اصطناعي لإعداد ملخصات دراسية فعالة.",
+    platforms: {
+      toolai: "https://www.notion.so"
+    },
+    rating: 4.6,
+    logo: "fa-solid fa-book-open"
+  },
+  {
+    id: 55,
+    name: "Otter.ai",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "أداة تحويل المحاضرات الصوتية إلى نصوص مكتوبة لتسهيل المراجعة والتعلم.",
+    platforms: {
+      toolai: "https://otter.ai"
+    },
+    rating: 4.5,
+    logo: "fa-solid fa-microphone"
+  },
+  {
+    id: 56,
+    name: "Grammarly AI",
+    subsection: "أدوات البرمجة والتعلم",
+    description: "أداة لتحسين الكتابة الأكاديمية والتقنية، تساعد في صياغة محتوى واضح وخالي من الأخطاء.",
+    platforms: {
+      toolai: "https://grammarly.com"
+    },
+    rating: 4.7,
+    logo: "fa-solid fa-pen"
+  },
+  
+  {
+    id: 57,
+    name: "Git & GitHub",
+    subsection: "الأدوات المشتركة لجميع المهندسين",
+    description: "Git هو نظام التحكم في الإصدارات وGitHub منصة استضافته؛ أساسيات لا غنى عنها للتعاون وتتبع التغييرات. كورس الزيرو ويب سكول يقدم شرحًا عميقًا، وGit Immersion يوفر تطبيقًا عمليًا فوريًا.",
+    platforms: {
+      youtube: "https://www.youtube.com/playlist?list=PLDoPjvgpZ8nDk3D6h1q4wXyOQ0dI_YlK8",
+      web: "http://git-immersion.com/"
+    },
+    rating: 5.0,
+    logo: "fa-brands fa-github"
+  },
+  {
+    id: 58,
+    name: "Linux & PowerShell",
+    subsection: "الأدوات المشتركة لجميع المهندسين",
+    description: "هذه الأدوات هي العمود الفقري للتحكم في الأنظمة والخوادم. كورس عبد الله عيد يؤسس لقواعد سطر أوامر Linux، و موقع Linuxize هو مرجع ممتاز ومجاني للأوامر والتطبيقات العملية.",
+    platforms: {
+      youtube: "https://www.youtube.com/@AbdullahEid/playlists",
+      web: "https://linuxize.com/post/linux-command-line-tutorial/"
+    },
+    rating: 4.8,
+    logo: "fa-brands fa-linux"
+  },
+  {
+    id: 59,
+    name: "VS Code و JetBrains",
+    subsection: "الأدوات المشتركة لجميع المهندسين",
+    description: "VS Code هو محرر الأكواد الأكثر شيوعًا ومرونة. كورس أحمد عكاشة يشرح تخصيص المحرر واستخدام إضافاته لزيادة الإنتاجية. بينما يمثل VS Code Docs المرجع الرسمي الشامل لكل الميزات والـ Debugging.",
+    platforms: {
+      youtube: "https://www.youtube.com/@AhmedOkasha/playlists",
+      web: "https://code.visualstudio.com/docs"
+    },
+    rating: 4.9,
+    logo: "fa-solid fa-code"
+  },
+  {
+    id: 60,
+    name: "Postman و APIs",
+    subsection: "الأدوات المشتركة لجميع المهندسين",
+    description: "الـ APIs هي الطريقة التي تتحدث بها التطبيقات، وPostman هو الأداة المعيارية لاختبار هذه الواجهات. كورس حسونة أكاديمي يقدم مدخلاً مبسطاً للمفهوم، وPostman Learning Center يوفر دليلاً متكاملاً لاختبار الـ APIs وبناء الـ Collections.",
+    platforms: {
+      youtube: "https://www.youtube.com/@HsoubAcademy/videos",
+      web: "https://learning.postman.com/"
+    },
+    rating: 4.7,
+    logo: "fa-solid fa-exchange-alt"
+  },
+  {
+    id: 61,
+    name: "SQL و قواعد البيانات",
+    subsection: "الأدوات المشتركة لجميع المهندسين",
+    description: "SQL هي لغة الاستعلام القياسية للبيانات. كورس الزيرو ويب سكول في SQL و MySQL يقدم شرحاً شاملاً. والموقع العالمي W3Schools يوفر تمارين تفاعلية سريعة لاختبار استعلامات SQL الأساسية والمتقدمة.",
+    platforms: {
+      youtube: "https://www.youtube.com/@ElzeroWebSchool/playlists",
+      web: "https://www.w3schools.com/sql/"
+    },
+    rating: 4.9,
+    logo: "fa-solid fa-database"
+  },
+  {
+    id: 62,
+    name: "Notion لإدارة المشاريع",
+    subsection: "الأدوات المشتركة لجميع المهندسين",
+    description: "أدوات متكاملة لتنظيم المهام وسير العمل، وأبرزها Notion لمرونته. شرح أيمن الصفدي يوضح كيفية بناء أنظمة متكاملة، بينما تقدم Notion Guides الرسمية شروحات مفصلة حول القوالب وكيفية استخدام الميزات المتقدمة.",
+    platforms: {
+      youtube: "https://www.youtube.com/@Ayman_Safadi/videos",
+      web: "https://www.notion.so/help/guides"
+    },
+    rating: 4.6,
+    logo: "fa-solid fa-list-check"
+  },
+  {
+    id: 63,
+    name: "Docker و VMs",
+    subsection: "الأدوات المشتركة لجميع المهندسين",
+    description: "Docker (الحاويات) هي التقنية الحديثة لضمان عمل تطبيقك في أي بيئة. كورس EGAcademy يوفر مدخلاً عملياً لفهم الحاويات والصور، أما Docker Docs الرسمي فهو أفضل نقطة انطلاق عالمية للبدء في تطبيق التقنية على مشاريعك.",
+    platforms: {
+      youtube: "https://www.youtube.com/@EGAcademy/playlists",
+      web: "https://docs.docker.com/get-started/"
+    },
+    rating: 4.7,
+    logo: "fa-brands fa-docker"
+  },
+  {
+    id: 64,
+    name: "Networking Basics",
+    subsection: "الأدوات المشتركة لجميع المهندسين",
+    description: "فهم أساسيات الشبكات ضروري لكل مختص تقني. كورس محمود فؤاد CCNA يعطي أساسًا نظريًا وعمليًا قويًا. ودورات Cisco Networking Academy المجانية توفر محتوى عالمي الجودة وممنهج في هذا المجال.",
+    platforms: {
+      youtube: "https://www.youtube.com/@MahmoudFouad-IT/playlists",
+      web: "https://skillsforall.com/course/networking-basics"
+    },
+    rating: 4.8,
+    logo: "fa-solid fa-network-wired"
+  },
+  
+  {
+    id: 65,
+    name: "Problem Solving و التفكير التحليلي",
+    subsection: "الأدوات العقلية والمفاهيم الأساسية",
+    description: "تعلم مهارات التفكير التحليلي وحل المشكلات البرمجية. الدورة العربية على يوتيوب تقدم أساسيات التفكير المنطقي والتحليل، وموقع CS Circles يقدم تمارين تفاعلية لتطوير التفكير البرمجي.",
+    platforms: {
+      youtube: "https://www.youtube.com/playlist?list=PL88kafUXXgBaAgb0h3-ZMvzxb5J2qFrut",
+      web: "https://cs-circles.cs.cmu.edu/"
+    },
+    rating: 4.7,
+    logo: "fa-solid fa-brain"
+  },
+  {
+    id: 66,
+    name: "خوارزميات و Data Structures أساسية",
+    subsection: "الأدوات العقلية والمفاهيم الأساسية",
+    description: "دورة عربية على يوتيوب تشرح الخوارزميات وهياكل البيانات الأساسية والمتقدمة، وموقع Udemy يقدم كورسات مجانية لتعلم Data Structures باللغة العربية.",
+    platforms: {
+      youtube: "https://www.youtube.com/playlist?list=PL88kafUXXgBaAgb0h3-ZMvzxb5J2qFrut",
+      web: "https://www.udemy.com/ar/topic/data-structures/free/"
+    },
+    rating: 4.8,
+    logo: "fa-solid fa-code-branch"
+  },
+  {
+    id: 67,
+    name: "نظم التشغيل و Architecture Basics",
+    subsection: "الأدوات العقلية والمفاهيم الأساسية",
+    description: "شرح مفصل لمفاهيم نظم التشغيل باللغة العربية على يوتيوب، مع كتاب مجاني 'Operating Systems: Three Easy Pieces' لتعلم الأساسيات والنظرية.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=va2GOlPFKv0",
+      web: "http://pages.cs.wisc.edu/~remzi/OSTEP/"
+    },
+    rating: 4.6,
+    logo: "fa-solid fa-desktop"
+  },
+  {
+    id: 68,
+    name: "أساسيات الرياضيات المنطقية والإحصاء",
+    subsection: "الأدوات العقلية والمفاهيم الأساسية",
+    description: "دورة عربية على يوتيوب لتعلم أساسيات الرياضيات المنطقية والإحصاء، وموقع Khan Academy يقدم محتوى تفاعلي مجاني في الإحصاء والاحتمالات.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=PB9qL1UaTIE",
+      web: "https://www.khanacademy.org/math/statistics-probability"
+    },
+    rating: 4.7,
+    logo: "fa-solid fa-square-root-variable"
+  },
+  {
+    id: 69,
+    name: "مهارات البحث والتحقق من المصادر",
+    subsection: "الأدوات العقلية والمفاهيم الأساسية",
+    description: "تعلم تقنيات البحث والتحقق من المعلومات عبر دورة عربية على يوتيوب، واستخدام محرك البحث الأكاديمي Google Scholar للوصول للأبحاث العلمية.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=PB9qL1UaTIE",
+      web: "https://scholar.google.com/"
+    },
+    rating: 4.6,
+    logo: "fa-solid fa-magnifying-glass"
+  },
+  {
+    id: 70,
+    name: "تعلم كيفية التعلم (Meta-Learning)",
+    subsection: "الأدوات العقلية والمفاهيم الأساسية",
+    description: "دورة عربية على يوتيوب تشرح استراتيجيات تعلم المهارات بسرعة، ودورة عالمية شهيرة على Coursera 'Learning How to Learn' لتطوير استراتيجيات التعلم.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=PB9qL1UaTIE",
+      web: "https://www.coursera.org/learn/learning-how-to-learn"
+    },
+    rating: 4.9,
+    logo: "fa-solid fa-lightbulb"
+  },
+  {
+    id: 71,
+    name: "التحليل المنهجي وحل المشكلات التقنية",
+    subsection: "الأدوات العقلية والمفاهيم الأساسية",
+    description: "دورة عربية على يوتيوب لتقنيات التحليل وحل المشكلات البرمجية، وموقع Project Euler يقدم مسائل برمجية ورياضية لتطوير التفكير التحليلي وحل المشكلات.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=PB9qL1UaTIE",
+      web: "https://projecteuler.net/"
+    },
+    rating: 4.8,
+    logo: "fa-solid fa-diagram-project"
+  },
+  
+  {
+    id: 72,
+    name: "Slack و Microsoft Teams للتواصل الجماعي",
+    subsection: "أدوات التواصل والتعاون المهني",
+    description: "تعلم استخدام Slack وMicrosoft Teams لإدارة الفرق والتواصل الجماعي بشكل احترافي.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=CUt0Y_toBIA | https://www.youtube.com/watch?v=9Qz6aZr7tSU",
+      web: "https://slack.com/ | https://www.microsoft.com/en/microsoft-teams/group-chat-software"
+    },
+    rating: 4.7,
+    logo: "fa-brands fa-slack"
+  },
+  {
+    id: 73,
+    name: "Zoom و Google Meet للاجتماعات التقنية",
+    subsection: "أدوات التواصل والتعاون المهني",
+    description: "تعلم إدارة الاجتماعات الافتراضية باستخدام Zoom وGoogle Meet.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=7n1CgiRGh6M | https://www.m3aarf.com/certificate/14884/Google-Meet-%D9%85%D9%86-%D8%A7%D9%84%D8%B5%D9%81%D8%B1-video",
+      web: "https://zoom.us/ | https://meet.google.com/"
+    },
+    rating: 4.8,
+    logo: "fa-solid fa-video"
+  },
+  {
+    id: 74,
+    name: "Jira و GitHub Projects لإدارة فرق التطوير",
+    subsection: "أدوات التواصل والتعاون المهني",
+    description: "تعلم استخدام Jira وGitHub Projects لإدارة فرق التطوير ومتابعة المهام والمشاريع.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=cHHL-znh2Po | https://www.youtube.com/watch?v=FueXoIewxg0",
+      web: "https://www.atlassian.com/software/jira | https://github.com/features/project-management"
+    },
+    rating: 4.8,
+    logo: "fa-brands fa-github"
+  },
+  {
+    id: 75,
+    name: "Discord و Telegram Communities لبناء علاقات تقنية",
+    subsection: "أدوات التواصل والتعاون المهني",
+    description: "تعلم استخدام Discord وTelegram لبناء مجتمعات تقنية والتواصل مع المطورين والمهندسين.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=-mzadJreN08",
+      web: "https://discord.com/ | https://telegram.org/"
+    },
+    rating: 4.7,
+    logo: "fa-brands fa-discord"
+  },
+  {
+    id: 76,
+    name: "Email Etiquette و التواصل الاحترافي",
+    subsection: "أدوات التواصل والتعاون المهني",
+    description: "تعلم آداب كتابة البريد الإلكتروني والتواصل الاحترافي في بيئة العمل.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=sR_K3fJyCO4 | https://www.udemy.com/course/arabic-email-etiquette/?srsltid=AfmBOoqEK9APtEheiYza6sL86Py0s1aVoflWpvkqFZ8BxES51onFQQAH",
+      web: "https://www.gmail.com/ | https://outlook.live.com/"
+    },
+    rating: 4.8,
+    logo: "fa-solid fa-envelope"
+  },
+  {
+    id: 77,
+    name: "توثيق المشاريع والعروض التقنية باستخدام Notion و Google Docs",
+    subsection: "أدوات التواصل والتعاون المهني",
+    description: "تعلم استخدام Notion وGoogle Docs لتوثيق المشاريع التقنية وإنشاء العروض بطريقة منظمة واحترافية.",
+    platforms: {
+      youtube: "https://www.youtube.com/watch?v=H1A7KZH2lpI | https://www.youtube.com/watch?v=8_dqId-6qGQ | https://www.youtube.com/watch?v=Zu-LY7vLdM8",
+      web: "https://www.notion.so/ | https://docs.google.com/"
+    },
+    rating: 4.8,
+    logo: "fa-solid fa-file-lines"
+  },
+
+
+
+
+
     ],
   };
 
